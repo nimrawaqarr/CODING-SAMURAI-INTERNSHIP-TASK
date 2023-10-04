@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600;700&family=Roboto&family=Hyundai:wght@400&family=Lato:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600;700&family=Roboto&family=Hyundai:wght@400&family=Lato:wght@400&display=swap");
+.header-main {
+  background-color: #0f0f0f;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0px;
+  transition: all ease-in-out 0.5s;
+}
+.logo{
+  padding-left: 20px;
+  color: #f0f0f0;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "raleway", sans-serif;
+  text-decoration: none;
+}
+
+.scroll-header-main {
+  background-color: #505050;
+  width: 100%;
+  z-index: 2222;
+  position: fixed;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+header .logo {
+  padding-left: 20px;
+}
+
+nav .nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  list-style: none;
+}
+nav .nav-list-item {
+  position: relative;
+}
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  color: #f0f0f0;
+  font-size: 15px;
+  line-height: 25px;
+}
+nav a:hover {
+  color: #ffdf00;
+}
+
+.booking {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding-right: 20px;
+}
+
+.header-btn {
+  width: fit-content;
+  background-color: #ffdf00;
+  border-radius: 35px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  height: 50%;
+}
+#menu-icon{
+  color: #f0f0f0;
+  font-size: 35px;
+  display: none;
+}
+
+@media ((min-width: 200px) and (max-width: 767px)) {
+  #menu-icon{
+    display: block;
+  }
+  .booking {
+    display: flex;
+  }
+  nav {
+    display: none;
+    transition: all ease-in-out 0.5s;
+  }
+  .toggle-side-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #5b5b5b;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+  }
+  .toggle-side-nav .nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    row-gap: 20px;
+    padding: 20px;
+  }
+}
+@media ((min-width: 768px) and (max-width: 1024px)) {
+  /* .menu-icon{
+    display: block;
+  } */
+  .booking {
+    display: flex;
+  }
+  nav {
+    /* display: none; */
+    transition: all ease-in-out 0.5s;
+  }
+  .responsive-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 20px;
+    padding-right: 20px;
+  }
+  .toggle-side-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #5b5b5b;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+  }
+  .toggle-side-nav .nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    row-gap: 20px;
+    padding: 20px;
+  }
+}

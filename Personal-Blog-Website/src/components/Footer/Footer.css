@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600;700&family=Roboto&family=Hyundai:wght@400&family=Lato:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600;700&family=Roboto&family=Hyundai:wght@400&family=Lato:wght@400&display=swap");
+.footer-main {
+  background-color: #0f0f0f;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #252629;
+  padding-bottom: 20px;
+}
+.top .blog {
+    font-size: 34px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #e0e0e0;
+    line-height: 44px;
+    padding-bottom: 10px;
+}
+.top .footer-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  list-style: none;
+}
+.top .footer-list .footer-list-item {
+  padding-right: 20px;
+}
+.top .footer-list .footer-list-item a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #bebebe;
+}
+.top .footer-list .footer-list-item::after {
+  content: ".";
+  color: #bebebe;
+  padding-left: 10px;
+}
+.top .footer-list .footer-list-item a:last-child {
+  padding-right: 0;
+}
+.top .footer-list .footer-list-item a:last-child::after {
+  content: none;
+}
+
+.middle {
+  display: grid;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 32% 32% 32%;
+  padding: 60px 0px;
+  text-align: center;
+  border-bottom: 1px solid #252629;
+}
+.middle .visit, .middle .call-us {
+  border-right: 1px solid #252629;
+}
+.middle .title {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: #e0e0e0;
+  line-height: 28px;
+  padding-bottom: 10px;
+}
+.middle .footer-content {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #7e7e7e;
+}
+.footer-content:hover{
+  color: #e0e0e0;
+}
+
+.terms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 20px 0px 0px 0px;
+}
+.terms .footer-term {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  list-style: none;
+}
+.terms .footer-term .footer-term-list-item {
+  color: #5b5b5b;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding-right: 40px;
+}
+.terms .footer-term .footer-term-list-item:last-child {
+  padding-right: 0px;
+}
+.terms .copyright {
+  color: #5b5b5b;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+@media ((min-width: 200px) and (max-width: 767px)) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .middle {
+    display: grid;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    grid-template-columns: 100%;
+  }
+  .middle .visit, .middle .call-us {
+    margin-bottom: 20px;
+    border: none;
+  }
+  .terms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .terms .footer-term {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 10px;
+  }
+  .terms .footer-term .footer-term-list-item {
+    padding: 0;
+  }
+  .terms .copyright {
+    margin-bottom: 10px;
+  }
+}
+@media ((min-width: 768px) and (max-width: 1024px)) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .middle {
+    display: grid;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    grid-template-columns: 100%;
+  }
+  .middle .visit, .middle .call-us {
+    margin-bottom: 20px;
+    border: none;
+  }
+  .terms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .terms .footer-term {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 10px;
+  }
+  .terms .footer-term .footer-term-list-item {
+    padding: 0;
+  }
+  .terms .copyright {
+    margin-bottom: 10px;
+  }
+}

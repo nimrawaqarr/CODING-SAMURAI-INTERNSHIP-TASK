@@ -1,0 +1,119 @@
+
+.about{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0px;
+}
+.about-span{
+    color: #FFDF00;
+    font-size: 30px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+}
+.us-span{
+    color: #000;
+    font-size: 30px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+}
+.text{
+    font-size: 24px;
+    line-height: 34px;
+    font-family: var(--mulish-font);
+    color: #5b5b5b;
+    padding: 10px 0px;
+    font-weight: 500;
+}
+.accomplishments{
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.accomplishments div{
+    box-shadow: var(--box-shadow);
+    width: 45%;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--mulish-font);
+}
+.accomp-text{
+    font-size: 22px;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+    color: #505050;
+}
+.values{
+    display: grid;
+    grid-template-columns: 45% 50%;
+    gap: 5%;
+}
+.values-img{
+    width: 100%;
+}
+.values-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 50px 0px;
+}
+.values-title{
+    color: #000;
+    font-size: 30px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+.values-content ul{
+    padding-left: 20px;
+}
+.values-content ul li{
+    list-style-type: circle;
+    font-size: 22px;
+    line-height: 34px;
+    font-family: var(--poppins-font);
+    color: #5b5b5b;
+}
+
+@media (min-width:200px) and (max-width: 767px){
+    .about-span, .us-span{
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .text{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .accomplishments{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .accomplishments div{
+        width: 90%;
+    }
+    .accomplishments div .accomp-text{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .values{
+        grid-template-columns: 90%;
+    }
+    @media (min-width: 600px) and (max-width: 767px){
+        .accomplishments{
+            flex-direction: row;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;700;500&family=Poppins:wght@200,300,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --dark-color: #242424;
+    --orange-color: #FA8C36;
+    --gray-color: #7A7A7A;
+    --box-shadow: 0.5px 0.5px 20px 0.5px rgba(0, 0, 0, 0.09);
+    --poppins-font: "Poppins", sans-serif;
+    --mulish-font: "Mulish", sans-serif; 
+    --font-size: 16px;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    box-sizing: border-box;
+    width: 100%;
+    /* max-width: 1400px; */
+}
+.wrapper{
+    padding: 0px 20px;
+    max-width: 1400px;
+    margin: 0px auto;
+}
+.container{
+    padding: 60px 0px;
+}
+.discovery-button{
+    width: 200px;
+    height: 50px;
+    background-color: var(--orange-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.anchor-tag{
+    font-family: var(--poppins-font);
+    font-weight: 400;
+    color: #D0D0D0;
+    /* font-style: none; */
+    text-decoration: none;
+}

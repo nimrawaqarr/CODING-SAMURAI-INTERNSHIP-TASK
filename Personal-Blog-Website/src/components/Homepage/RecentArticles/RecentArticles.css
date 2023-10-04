@@ -1,0 +1,10 @@
+.recent-article-btn{
+    background: #ffdf00;
+    border: none;
+    padding: 10px 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+}
